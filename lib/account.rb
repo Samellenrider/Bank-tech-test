@@ -2,7 +2,7 @@ require 'date'
 
 class Account
   attr_reader :name, :date#, :statement
-  attr_accessor :credit, :transactions
+  attr_accessor :credit, :transactions, :debit
 
   def initialize(name, date = Time.now)
     @name = name
@@ -10,7 +10,7 @@ class Account
     @debit = 0
     #@statement = Statement.new
     @transactions = []
-    @date = date
+    @date = date.to_s
   end
 
   def balance
@@ -19,6 +19,8 @@ class Account
 
   def topup(amount)
     @credit += amount
+    t = {date: @date, name: @name, credit: @credit, debit: @debit}
+    @transactions.push(t)
   end
 
   def account
@@ -29,10 +31,13 @@ class Account
   def withdrawl(amount)
     if @credit >= amount
       @credit -= amount
+      t = {date: @date, name: @name, credit: @credit, debit: amount}
+      @transactions.push(t)
       p "You withdrawled $#{amount}. New balace $#{@credit}."
     else
       p 'You have insufficient funds.'
     end
+
   end
 
   def log
