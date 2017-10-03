@@ -53,7 +53,7 @@ describe Account do
     bankaccount = Account.new('Sam')
     bankaccount.deposit(50)
     #bankaccount.withdrawl(20)
-    expect(bankaccount.print_statement).to include(@transactions) 
+    expect(bankaccount.print_statement).to include() 
   end
  
 end
