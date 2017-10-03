@@ -1,16 +1,16 @@
 require 'date'
 
 class Account
-  attr_reader :name, :date, :statement
+  attr_reader :name, :date#, :statement
   attr_accessor :credit, :transactions
 
-  def initialize(name)#, date = Date.today)
+  def initialize(name, date = Time.now)
     @name = name
     @credit = 0
     @debit = 0
-    @statement = Statement.new
+    #@statement = Statement.new
     @transactions = []
-    #@date = date
+    @date = date
   end
 
   def balance
@@ -36,11 +36,24 @@ class Account
   end
 
   def log
-    single_transaction = { #date: @date,
+    single_transaction = { date: @date,
                            name: @name,
                            credit: @credit,
                            debit: @debit }
     #transactions = []
     @transactions.push(single_transaction)
   end
+
+  def print_statement
+
+     @transactions.each do |name, date, credit, debit|
+   
+   if debit == 0
+    print "name || date || credit || debit ""\n"
+else
+	print "name || date || credit || debit ""\n"
+  end
+
+  end
+end
 end
