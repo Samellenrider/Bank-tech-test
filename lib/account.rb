@@ -44,3 +44,6 @@ ac =Account.new("Sam")
 ac.deposit(100)
 ac.withdrawl(50)
 ac.print_statement
+
+
+
