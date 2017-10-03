@@ -16,14 +16,14 @@ class Account
 
   def topup(amount)
     @credit += amount    
-    @transactions << {date: @date, name: @name, credit: @credit, debit: @debit, topup: amount}
+    @transactions << ["#{@date} || #{@name} ||  #{@credit} || #{@debit} ||  #{amount}"]
     "You topped up $#{amount}. New balance $#{@credit}"
   end
 
   def withdrawl(amount)
     if @credit >= amount
       @credit -= amount
-      @transactions << {date: @date, name: @name, credit: @credit, debit: amount, topup: @topup}
+      @transactions << ["#{@date} || #{@name} ||  #{@credit} || #{amount} ||  #{@topup}"]
        "You withdrawled $#{amount}. New balace $#{@credit}."
     else
        "You have insufficient funds."
@@ -31,15 +31,14 @@ class Account
   end
 
   def print_statement
-  	print "name || date || credit || debit || topup \n"
-    @transactions.each do |elt|
-    		elt.each do |key, value|
-    		  "#{key}||"#{value}||#{value}||#{value}||#{value}"
-    		end
-    	end
+  	print "date || name || credit || debit || topup \n"
+    @transactions.each do |row|
+    	puts row
     end
   end
-end	
+end
+
+
 
 ac =Account.new("Sam")
 ac.topup(100)

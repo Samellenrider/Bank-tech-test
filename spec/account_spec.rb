@@ -4,20 +4,7 @@ describe Account do
   it 'can top up my account' do
     bankaccount = Account.new('Sam')
     bankaccount.topup(50)
-    expect(bankaccount.balance).to eq(50)
-  end
-
-  it 'can check my balance' do
-    bankaccount = Account.new('Sam')
-    bankaccount.topup(50)
-    bankaccount.topup(30)
-    expect(bankaccount.balance).to eq(80)
-  end
-
-  it 'displays my account details' do
-    bankaccount = Account.new('Sam')
-    bankaccount.topup(50)
-    expect(bankaccount.account).to eq('Sam' && 50)
+    expect(bankaccount.credit).to eq(50)
   end
 
   it 'withdrawls subtracts withdrawl from my credit' do
@@ -31,11 +18,12 @@ describe Account do
     bankaccount.topup(50)
     expect(bankaccount.withdrawl(80)).to eq('You have insufficient funds.')
   end
-
-  it 'creates a log' do
+  
+  it 'prints my statement' do 
     bankaccount = Account.new('Sam')
     bankaccount.topup(50)
-    bankaccount.withdrawl(30)
-    expect(bankaccount.log).to eq([{ date: '2017-10-03 11:51:13 +0100', name: 'Sam', credit: 20, debit: 0 }])
+    #bankaccount.withdrawl(20)
+    expect(bankaccount.print_statement).to eq("date || name || credit || debit || topup\n #{@date} || Sam ||  50 || 0 ||  50" )
   end
+ 
 end
