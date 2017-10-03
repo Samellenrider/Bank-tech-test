@@ -36,7 +36,6 @@ describe Account do
     bankaccount = Account.new('Sam')
     bankaccount.topup(50)
     bankaccount.withdrawl(30)
-    expect(bankaccount.log).to eq([{:date=>"2017-10-03 11:51:13 +0100", :name=>"Sam", :credit=>20, :debit=>0}])
+    expect(bankaccount.log).to eq([{ date: '2017-10-03 11:51:13 +0100', name: 'Sam', credit: 20, debit: 0 }])
   end
-
 end
