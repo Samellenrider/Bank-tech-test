@@ -14,7 +14,7 @@ class Account
   end
 
 
-  def topup(amount)
+  def deposit(amount)
     @credit += amount    
     @transactions << ["#{@date} || #{@name} ||  #{@credit} || #{@debit} ||  #{amount}"]
     "You topped up $#{amount}. New balance $#{@credit}"
@@ -41,6 +41,6 @@ end
 
 
 ac =Account.new("Sam")
-ac.topup(100)
+ac.deposit(100)
 ac.withdrawl(50)
 ac.print_statement
