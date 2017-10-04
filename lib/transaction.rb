@@ -1,13 +1,12 @@
 
 class Transaction
-  
   attr_accessor :credit, :transactions_array, :debit, :topup
 
-  def initialize(date = Time.now)
-  	@credit = 0
-  	@debit = 0
+  def initialize
+    @credit = 0
+    @debit = 0
     @topup = 0
-    @date = date.to_s
+    @date = Time.now
     @transactions_array = []
   end
 

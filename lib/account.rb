@@ -1,38 +1,28 @@
-require_relative 'statement'
 require_relative 'transaction'
 
 class Account
-  attr_reader :name, :date, :statement
-  #attr_accessor :credit, :transactions, :debit, :topup
+  attr_reader :name, :date
 
-  def initialize(name, statement = Statement.new, transactions = Transaction.new)
+  def initialize(name, transactions = Transaction.new)
     @name = name
-    # @debit = 0
-    # @topup = 0
-    # @date = date.to_s
-    @statement = statement
     @transactions = transactions
   end
 
   def deposit(value)
-  	@transactions.deposit(value)
+    @transactions.deposit(value)
   end
 
   def withdrawl(value)
-  	@transactions.withdrawl(value)
+    @transactions.withdrawl(value)
   end
 
   def print_statement
-  	@statement.print_statement
-  end
-
-  def array
-  	p @transactions.transactions_array
+    print "date || credit || debit || topup \n"
+    @transactions.transactions_array.each do |row|
+      puts row
+    end
   end
 end
-
-
-
 
 ac = Account.new('Sam')
 ac.deposit(100)

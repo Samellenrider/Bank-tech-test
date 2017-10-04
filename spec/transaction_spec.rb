@@ -1,12 +1,6 @@
 require 'transaction'
 
 describe Transaction do
-  it 'topup adds to topup' do
-    bankaccount = Account.new('Sam')
-    bankaccount.deposit(50)
-    expect(bankaccount.credit).to eq(50)
-  end
-
   it 'withdrawls subtracts withdrawl from my credit' do
     bankaccount = Account.new('Sam')
     bankaccount.deposit(50)
