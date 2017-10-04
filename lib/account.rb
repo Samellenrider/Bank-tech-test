@@ -7,10 +7,8 @@ class Account
 
   def initialize(name, date = Time.now, statement = Statement.new, transactions = Transaction.new)
     @name = name
-    #@credit = 0
     @debit = 0
     @topup = 0
-    #@transactions_array = []
     @date = date.to_s
     @statement = statement
     @transactions = transactions
