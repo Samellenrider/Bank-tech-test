@@ -1,6 +1,6 @@
 require 'transaction'
 
-Describe Transaction do
+describe Transaction do
   it 'topup adds to topup' do
     bankaccount = Account.new('Sam')
     bankaccount.deposit(50)

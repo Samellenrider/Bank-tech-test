@@ -14,27 +14,27 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-10-03T17:28:02+01:00">2017-10-03T17:28:02+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-10-04T14:55:43+01:00">2017-10-04T14:55:43+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.46%</span></span>
+    (<span class="covered_percent"><span class="green">97.65%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.29
+         2.36
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>4</b> files in total.
-    <b>65</b> relevant lines. 
-    <span class="green"><b>64</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed </span>
+    <b>6</b> files in total.
+    <b>85</b> relevant lines. 
+    <span class="green"><b>83</b> lines covered</span> and
+    <span class="red"><b>2</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -52,30 +52,40 @@
       
       <tr>
         <td class="strong"><a href="#f7899cfe85216fda51217c88febb378db8fba798" class="src_link" title="lib/account.rb">lib/account.rb</a></td>
-        <td class="green strong">96.55 %</td>
-        <td>49</td>
-        <td>29</td>
-        <td>28</td>
+        <td class="green strong">95.0 %</td>
+        <td>40</td>
+        <td>20</td>
+        <td>19</td>
         <td>1</td>
-        <td>3.9</td>
+        <td>2.8</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#6b230609ac88a9a1393bc69625ccb38df21255c6" class="src_link" title="lib/statement.rb">lib/statement.rb</a></td>
+        <td class="yellow strong">85.71 %</td>
+        <td>12</td>
+        <td>7</td>
+        <td>6</td>
+        <td>1</td>
+        <td>1.3</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#856161db18ab12ac4eaf4871f96ca5bc678fc989" class="src_link" title="lib/transaction.rb">lib/transaction.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>21</td>
+        <td>29</td>
+        <td>18</td>
+        <td>18</td>
         <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0.0</td>
+        <td>5.3</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#c8c0f692503baa13df0123d15cc8f8445e9b3da7" class="src_link" title="spec/account_spec.rb">spec/account_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>58</td>
-        <td>36</td>
-        <td>36</td>
+        <td>57</td>
+        <td>20</td>
+        <td>20</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -83,11 +93,21 @@
       <tr>
         <td class="strong"><a href="#bae72aff9dccf1da38e4bc453929105d6e553205" class="src_link" title="spec/statement_spec.rb">spec/statement_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
+        <td>11</td>
+        <td>6</td>
         <td>6</td>
         <td>0</td>
+        <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#0a9826ebbaffbd18b78512ab4f057511586255da" class="src_link" title="spec/transaction_spec.rb">spec/transaction_spec.rb</a></td>
+        <td class="green strong">100.0 %</td>
+        <td>21</td>
+        <td>14</td>
+        <td>14</td>
         <td>0</td>
-        <td>0</td>
-        <td>0.0</td>
+        <td>1.0</td>
       </tr>
       
     </tbody>
@@ -109,10 +129,10 @@
         <div class="source_table" id="f7899cfe85216fda51217c88febb378db8fba798">
   <div class="header">
     <h3>lib/account.rb</h3>
-    <h4><span class="green">96.55 %</span> covered</h4>
+    <h4><span class="green">95.0 %</span> covered</h4>
     <div>
-      <b>29</b> relevant lines. 
-      <span class="green"><b>28</b> lines covered</span> and
+      <b>20</b> relevant lines. 
+      <span class="green"><b>19</b> lines covered</span> and
       <span class="red"><b>1</b> lines missed.</span>
     </div>
   </div>
@@ -123,91 +143,91 @@
         <li class="covered" data-hits="1" data-linenumber="1">
           <span class="hits">1</span>
           
-          <code class="ruby">require &#39;statement&#39;</code>
+          <code class="ruby">require_relative &#39;statement&#39;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require_relative &#39;transaction&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="3">
-          <span class="hits">1</span>
-          
-          <code class="ruby">class Account</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_reader :name, :date</code>
+          <code class="ruby">class Account</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_accessor :credit, :transactions, :debit, :topup</code>
+          <code class="ruby">  attr_reader :name, :date, :statement</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
+          <code class="ruby">  #attr_accessor :credit, :transactions, :debit, :topup</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="7">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">  def initialize(name, date = Time.now)</code>
-        </li>
-      
-        <li class="covered" data-hits="11" data-linenumber="8">
-          <span class="hits">11</span>
-          
-          <code class="ruby">    @name = name</code>
+          <code class="ruby">  def initialize(name, statement = Statement.new, transactions = Transaction.new)</code>
         </li>
       
         <li class="covered" data-hits="11" data-linenumber="9">
           <span class="hits">11</span>
           
-          <code class="ruby">    @credit = 0</code>
+          <code class="ruby">    @name = name</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="10">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="10">
           
-          <code class="ruby">    @debit = 0</code>
+          
+          <code class="ruby">    # @debit = 0</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="11">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="11">
           
-          <code class="ruby">    @topup = 0</code>
+          
+          <code class="ruby">    # @topup = 0</code>
         </li>
       
-        <li class="covered" data-hits="11" data-linenumber="12">
-          <span class="hits">11</span>
+        <li class="never" data-hits="" data-linenumber="12">
           
-          <code class="ruby">    @transactions = []</code>
+          
+          <code class="ruby">    # @date = date.to_s</code>
         </li>
       
         <li class="covered" data-hits="11" data-linenumber="13">
           <span class="hits">11</span>
           
-          <code class="ruby">    @date = date.to_s</code>
+          <code class="ruby">    @statement = statement</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="covered" data-hits="11" data-linenumber="14">
+          <span class="hits">11</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    @transactions = transactions</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
@@ -219,85 +239,85 @@
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">  def deposit(amount)</code>
+          <code class="ruby">  def deposit(value)</code>
         </li>
       
         <li class="covered" data-hits="5" data-linenumber="18">
           <span class="hits">5</span>
           
-          <code class="ruby">    @credit += amount    </code>
+          <code class="ruby">  	@transactions.deposit(value)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="19">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    @transactions &lt;&lt; [&quot;#{@date} || #{@name} ||  #{@credit} || #{@debit} ||  #{amount}&quot;]</code>
-        </li>
-      
-        <li class="covered" data-hits="5" data-linenumber="20">
-          <span class="hits">5</span>
-          
-          <code class="ruby">    &quot;You topped up $#{amount}. New balance $#{@credit}&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="never" data-hits="" data-linenumber="19">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="23">
+        <li class="covered" data-hits="1" data-linenumber="21">
           <span class="hits">1</span>
           
-          <code class="ruby">  def withdrawl(amount)</code>
+          <code class="ruby">  def withdrawl(value)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="24">
+        <li class="covered" data-hits="3" data-linenumber="22">
           <span class="hits">3</span>
           
-          <code class="ruby">    if @credit &gt;= amount</code>
+          <code class="ruby">  	@transactions.withdrawl(value)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="25">
-          <span class="hits">3</span>
+        <li class="never" data-hits="" data-linenumber="23">
           
-          <code class="ruby">      @credit -= amount</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="26">
-          <span class="hits">3</span>
+        <li class="never" data-hits="" data-linenumber="24">
           
-          <code class="ruby">      @transactions &lt;&lt; [&quot;#{@date} || #{@name} ||  #{@credit} || #{amount} ||  #{@topup}&quot;]</code>
+          
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="27">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="1" data-linenumber="25">
+          <span class="hits">1</span>
           
-          <code class="ruby">       &quot;You withdrawled $#{amount}. New balace $#{@credit}.&quot;</code>
+          <code class="ruby">  def print_statement</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="26">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  	@statement.print_statement</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="28">
           
           
-          <code class="ruby">    else</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="29">
+        <li class="covered" data-hits="1" data-linenumber="29">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">       &quot;You have insufficient funds.&quot;</code>
+          <code class="ruby">  def array</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="30">
+        <li class="missed" data-hits="0" data-linenumber="30">
           
           
-          <code class="ruby">    end</code>
+          <code class="ruby">  	p @transactions.transactions_array</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="31">
@@ -309,109 +329,55 @@
         <li class="never" data-hits="" data-linenumber="32">
           
           
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="33">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def print_statement</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="34">
-          <span class="hits">2</span>
-          
-          <code class="ruby">  	print &quot;date || name || credit || debit || topup \n&quot;</code>
-        </li>
-      
-        <li class="covered" data-hits="2" data-linenumber="35">
-          <span class="hits">2</span>
-          
-          <code class="ruby">    @transactions.each do |row|</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="36">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    	puts row</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="37">
-          
-          
-          <code class="ruby">    end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="38">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="39">
-          
-          
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="40">
+        <li class="never" data-hits="" data-linenumber="33">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="41">
+        <li class="never" data-hits="" data-linenumber="34">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="42">
+        <li class="never" data-hits="" data-linenumber="35">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
+        <li class="never" data-hits="" data-linenumber="36">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="37">
           <span class="hits">1</span>
           
-          <code class="ruby">ac =Account.new(&quot;Sam&quot;)</code>
+          <code class="ruby">ac = Account.new(&#39;Sam&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="44">
+        <li class="covered" data-hits="1" data-linenumber="38">
           <span class="hits">1</span>
           
           <code class="ruby">ac.deposit(100)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="45">
+        <li class="covered" data-hits="1" data-linenumber="39">
           <span class="hits">1</span>
           
           <code class="ruby">ac.withdrawl(50)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
+        <li class="covered" data-hits="1" data-linenumber="40">
           <span class="hits">1</span>
           
           <code class="ruby">ac.print_statement</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="47">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="48">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="49">
-          
-          
-          <code class="ruby"></code>
         </li>
       
     </ol>
@@ -422,10 +388,101 @@
         <div class="source_table" id="6b230609ac88a9a1393bc69625ccb38df21255c6">
   <div class="header">
     <h3>lib/statement.rb</h3>
+    <h4><span class="yellow">85.71 %</span> covered</h4>
+    <div>
+      <b>7</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require_relative &#39;./account&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">class Statement</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def print_statement</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
+          <code class="ruby">  	n = Transaction.new</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="7">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    print &quot;date || credit || debit || topup \n&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="8">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    n.transactions_array.each do |row|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="9">
+          
+          
+          <code class="ruby">      puts row</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="12">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="856161db18ab12ac4eaf4871f96ca5bc678fc989">
+  <div class="header">
+    <h3>lib/transaction.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>0</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
+      <b>18</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -436,127 +493,175 @@
         <li class="never" data-hits="" data-linenumber="1">
           
           
-          <code class="ruby"># require_relative &#39;./account&#39;</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"></code>
+          <code class="ruby">class Transaction</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
           
           
-          <code class="ruby"># class Statement</code>
+          <code class="ruby">  </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#   def initialize</code>
+          <code class="ruby">  attr_accessor :credit, :transactions_array, :debit, :topup</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="5">
           
           
-          <code class="ruby">#     @account = Account.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="6">
-          
-          
-          <code class="ruby">#   end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="7">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="8">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#   def head_line</code>
+          <code class="ruby">  def initialize(date = Time.now)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="9">
+        <li class="covered" data-hits="13" data-linenumber="7">
+          <span class="hits">13</span>
           
-          
-          <code class="ruby">#     p &#39;name || date || credit || debit&#39;</code>
+          <code class="ruby">  	@credit = 0</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="10">
+        <li class="covered" data-hits="13" data-linenumber="8">
+          <span class="hits">13</span>
           
-          
-          <code class="ruby">#   end</code>
+          <code class="ruby">  	@debit = 0</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="11">
+        <li class="covered" data-hits="13" data-linenumber="9">
+          <span class="hits">13</span>
           
+          <code class="ruby">    @topup = 0</code>
+        </li>
+      
+        <li class="covered" data-hits="13" data-linenumber="10">
+          <span class="hits">13</span>
           
-          <code class="ruby"></code>
+          <code class="ruby">    @date = date.to_s</code>
+        </li>
+      
+        <li class="covered" data-hits="13" data-linenumber="11">
+          <span class="hits">13</span>
+          
+          <code class="ruby">    @transactions_array = []</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">#   def print_statement</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">#     @transactions.each do |_name, _date, _credit, debit|</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#       if debit == 0</code>
+          <code class="ruby">  def deposit(amount)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="covered" data-hits="5" data-linenumber="15">
+          <span class="hits">5</span>
           
-          
-          <code class="ruby">#         print &#39;name || date || credit || debit &#39;</code>
+          <code class="ruby">    @credit += amount</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="covered" data-hits="5" data-linenumber="16">
+          <span class="hits">5</span>
           
-          
-          <code class="ruby">#       else</code>
+          <code class="ruby">    @transactions_array &lt;&lt; [&quot;#{@date} || #{@credit} || #{@debit} ||  #{amount}&quot;]</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="17">
+        <li class="covered" data-hits="5" data-linenumber="17">
+          <span class="hits">5</span>
           
-          
-          <code class="ruby">#         print &#39;name || date || credit || debit &#39;</code>
+          <code class="ruby">    &quot;You topped up $#{amount}. New balance $#{@credit}&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
           
           
-          <code class="ruby">#    end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
           
           
-          <code class="ruby">#     end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="20">
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"># end</code>
+          <code class="ruby">  def withdrawl(amount)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="21">
+        <li class="covered" data-hits="3" data-linenumber="21">
+          <span class="hits">3</span>
+          
+          <code class="ruby">    if @credit &gt;= amount</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="22">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      @credit -= amount</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="23">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      @transactions_array &lt;&lt; [&quot;#{@date} || #{@credit} || #{amount} ||  #{@topup}&quot;]</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="24">
+          <span class="hits">2</span>
+          
+          <code class="ruby">      &quot;You withdrawled $#{amount}. New balace $#{@credit}.&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby"># end</code>
+          <code class="ruby">    else</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="26">
+          <span class="hits">1</span>
+          
+          <code class="ruby">      &#39;You have insufficient funds.&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">    end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">end</code>
         </li>
       
     </ol>
@@ -569,8 +674,8 @@
     <h3>spec/account_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>36</b> relevant lines. 
-      <span class="green"><b>36</b> lines covered</span> and
+      <b>20</b> relevant lines. 
+      <span class="green"><b>20</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -776,34 +881,34 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="34">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="34">
           
-          <code class="ruby">  it &#39;topup adds to topup&#39; do</code>
+          
+          <code class="ruby">  # it &#39;topup adds to topup&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="35">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="35">
           
-          <code class="ruby">    bankaccount = Account.new(&#39;Sam&#39;)</code>
+          
+          <code class="ruby">  #   bankaccount = Account.new(&#39;Sam&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="36">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="36">
           
-          <code class="ruby">    bankaccount.deposit(50)</code>
+          
+          <code class="ruby">  #   bankaccount.deposit(50)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="37">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="37">
           
-          <code class="ruby">    expect(bankaccount.credit).to eq(50)</code>
+          
+          <code class="ruby">  #   expect(bankaccount.credit).to eq(50)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="39">
@@ -812,34 +917,34 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="40">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="40">
           
-          <code class="ruby">  it &#39;withdrawls subtracts withdrawl from my credit&#39; do</code>
+          
+          <code class="ruby">  # it &#39;withdrawls subtracts withdrawl from my credit&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="41">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="41">
           
-          <code class="ruby">    bankaccount = Account.new(&#39;Sam&#39;)</code>
+          
+          <code class="ruby">  #   bankaccount = Account.new(&#39;Sam&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="42">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="42">
           
-          <code class="ruby">    bankaccount.deposit(50)</code>
+          
+          <code class="ruby">  #   bankaccount.deposit(50)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="43">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="43">
           
-          <code class="ruby">    expect(bankaccount.withdrawl(30)).to eq(&#39;You withdrawled $30. New balace $20.&#39;)</code>
+          
+          <code class="ruby">  #   expect(bankaccount.withdrawl(30)).to eq(&#39;You withdrawled $30. New balace $20.&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="45">
@@ -848,79 +953,73 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="46">
           
-          <code class="ruby">  it &#39;throws an error if balance is lower than withdrawl amount&#39; do</code>
+          
+          <code class="ruby">  # it &#39;throws an error if balance is lower than withdrawl amount&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="47">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="47">
           
-          <code class="ruby">    bankaccount = Account.new(&#39;Sam&#39;)</code>
+          
+          <code class="ruby">  #   bankaccount = Account.new(&#39;Sam&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="48">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="48">
           
-          <code class="ruby">    bankaccount.deposit(50)</code>
+          
+          <code class="ruby">  #   bankaccount.deposit(50)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="49">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="49">
           
-          <code class="ruby">    expect(bankaccount.withdrawl(30)).to eq(&#39;You have insufficient funds.&#39;)</code>
+          
+          <code class="ruby">  #   expect(bankaccount.withdrawl(80)).to eq(&#39;You have insufficient funds.&#39;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="51">
           
           
-          <code class="ruby">  </code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="52">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="52">
           
-          <code class="ruby">  it &#39;prints my statement&#39; do </code>
+          
+          <code class="ruby">  # it &#39;prints my statement&#39; do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="53">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="53">
           
-          <code class="ruby">    bankaccount = Account.new(&#39;Sam&#39;)</code>
+          
+          <code class="ruby">  #   bankaccount = Account.new(&#39;Sam&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="54">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="54">
           
-          <code class="ruby">    bankaccount.deposit(50)</code>
+          
+          <code class="ruby">  #   bankaccount.deposit(50)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="55">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="55">
           
-          <code class="ruby">    expect(bankaccount.print_statement).to include() </code>
+          
+          <code class="ruby">  #   expect(bankaccount.print_statement).to include</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="56">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
-          
-          
-          <code class="ruby"> </code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="58">
           
           
           <code class="ruby">end</code>
@@ -936,8 +1035,8 @@
     <h3>spec/statement_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>0</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -945,10 +1044,10 @@
   <pre>
     <ol>
       
-        <li class="never" data-hits="" data-linenumber="1">
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"># require &#39;statement&#39;</code>
+          <code class="ruby">require &#39;statement&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="2">
@@ -957,28 +1056,203 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"># describe Statement do</code>
+          <code class="ruby">describe Statement do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
           
           
-          <code class="ruby">#   it &#39;should print the headline&#39; do</code>
+          <code class="ruby">  </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#   end</code>
+          <code class="ruby">  it &#39;prints my statement&#39; do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    bankaccount = Account.new(&#39;Sam&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    bankaccount.deposit(50)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(bankaccount.print_statement).to include()</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby"># end</code>
+          <code class="ruby">  end </code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">	</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+
+      
+        <div class="source_table" id="0a9826ebbaffbd18b78512ab4f057511586255da">
+  <div class="header">
+    <h3>spec/transaction_spec.rb</h3>
+    <h4><span class="green">100.0 %</span> covered</h4>
+    <div>
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;transaction&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe Transaction do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;topup adds to topup&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    bankaccount = Account.new(&#39;Sam&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    bankaccount.deposit(50)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(bankaccount.credit).to eq(50)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;withdrawls subtracts withdrawl from my credit&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    bankaccount = Account.new(&#39;Sam&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    bankaccount.deposit(50)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(bankaccount.withdrawl(30)).to eq(&#39;You withdrawled $30. New balace $20.&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &#39;throws an error if balance is lower than withdrawl amount&#39; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    bankaccount = Account.new(&#39;Sam&#39;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    bankaccount.deposit(50)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(bankaccount.withdrawl(80)).to eq(&#39;You have insufficient funds.&#39;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">end</code>
         </li>
       
     </ol>

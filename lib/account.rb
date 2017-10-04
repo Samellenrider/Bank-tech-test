@@ -5,11 +5,11 @@ class Account
   attr_reader :name, :date, :statement
   #attr_accessor :credit, :transactions, :debit, :topup
 
-  def initialize(name, date = Time.now, statement = Statement.new, transactions = Transaction.new)
+  def initialize(name, statement = Statement.new, transactions = Transaction.new)
     @name = name
-    @debit = 0
-    @topup = 0
-    @date = date.to_s
+    # @debit = 0
+    # @topup = 0
+    # @date = date.to_s
     @statement = statement
     @transactions = transactions
   end
@@ -24,6 +24,10 @@ class Account
 
   def print_statement
   	@statement.print_statement
+  end
+
+  def array
+  	p @transactions.transactions_array
   end
 end
 
