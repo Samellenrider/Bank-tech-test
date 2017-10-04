@@ -1,21 +1,17 @@
-# require_relative './account'
+require_relative './account'
 
-# class Statement
-#   def initialize
-#     @account = Account.new
-#   end
+class Statement
 
-#   def head_line
-#     p 'name || date || credit || debit'
-#   end
+	attr_reader :transactions_array
 
-#   def print_statement
-#     @transactions.each do |_name, _date, _credit, debit|
-#       if debit == 0
-#         print 'name || date || credit || debit '
-#       else
-#         print 'name || date || credit || debit '
-#    end
-#     end
-# end
-# end
+	def initialize
+	  @transactions_array = []
+	end
+
+  def print_statement
+    print "date || name || credit || debit || topup \n"
+    @transactions_array.each do |row|
+      puts row
+    end
+  end
+end
