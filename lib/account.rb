@@ -12,14 +12,18 @@ class Account
     @transactions.debit(value)
   end
 
-  def credit(value) #debit
+  def credit(value)
     @transactions.credit(value)
   end
 
-  def print_statement
-    print "date || credit || debit || balance \n"
+  def print_header
+    h = 'date || credit || debit || balance'
+    p h
+  end
 
-    @transactions.transactions_array.each do |row|
+  def print_statement
+    print_header
+    @transactions.transactions_array.reverse.each do |row|
       puts row
     end
   end

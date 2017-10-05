@@ -1,15 +1,16 @@
+require 'spec_helper'
 require 'transaction'
 
 describe Transaction do
-  it 'withdrawls subtracts withdrawl from my credit' do
-    bankaccount = Account.new('Sam')
-    bankaccount.debit(50)
-    expect(bankaccount.credit(30)).to eq('You withdrawled $30. New balace $20.0.')
+  it 'adds a transaction to the array debit' do
+    transaction = Transaction.new
+    transaction.debit(100)
+    expect(transaction.transactions_array.count).to be(1)
   end
-
-  it 'throws an error if balance is lower than withdrawl amount' do
-    bankaccount = Account.new('Sam')
-    bankaccount.debit(50)
-    expect(bankaccount.credit(80)).to eq('You have insufficient funds.')
+  it 'adds a transaction to the array credit' do
+    transaction = Transaction.new
+    transaction.debit(100)
+    transaction.credit(50)
+    expect(transaction.transactions_array.count).to be(2)
   end
 end

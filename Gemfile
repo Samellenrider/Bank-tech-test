@@ -6,5 +6,6 @@ gem 'flog'
 gem 'rspec'
 gem 'rubocop'
 gem 'ruby-lint'
+gem 'rake'
 gem 'simplecov', require: false, group: :test
 gem 'simplecov-console', require: false, group: :test
