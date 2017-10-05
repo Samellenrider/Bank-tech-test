@@ -9,7 +9,7 @@ describe Account do
 
   it 'prints header' do
     bankaccount = Account.new('Sam')
-    expect(bankaccount.print_header).to eq("date || credit || debit || balance")
+    expect(bankaccount.print_header).to eq('date || credit || debit || balance')
   end
 
   it 'prints the statement right' do
@@ -19,4 +19,3 @@ describe Account do
     expect(bankaccount.print_statement).to eq([['05/10/2017 || || 20.0 ||  30.0'], ['05/10/2017 || 50.0 || ||  50.0']])
   end
 end
-
