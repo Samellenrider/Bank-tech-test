@@ -28,8 +28,3 @@ class Account
     end
   end
 end
-
-# ac = Account.new('Sam')
-# ac.debit(100)
-# ac.credit(50) #debit
-# ac.print_statement
