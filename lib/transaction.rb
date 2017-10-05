@@ -1,26 +1,27 @@
 
 class Transaction
-  attr_accessor :credit, :transactions_array, :debit, :topup
+  attr_accessor :balance, :transactions_array, :debit, :credit
 
   def initialize
-    @credit = 0
+    @balance = 0
     @debit = 0
-    @topup = 0
-    @date = Time.now
+    @credit = 0
+    t = Time.now
+    @date = t.strftime("%d/%m/%Y")
     @transactions_array = []
   end
 
-  def deposit(amount)
-    @credit += amount
-    @transactions_array << ["#{@date} || #{@credit} || #{@debit} ||  #{amount}"]
-    "You topped up $#{amount}. New balance $#{@credit}"
+  def debit(amount)
+    @balance += amount
+    @transactions_array.unshift(["#{@date} || #{amount.to_s + ".00"} || ||  #{@balance.to_s + ".00"}"])
+    "You topped up $#{amount}. New balance $#{@balance}"
   end
 
-  def withdrawl(amount)
-    if @credit >= amount
-      @credit -= amount
-      @transactions_array << ["#{@date} || #{@credit} || #{amount} ||  #{@topup}"]
-      "You withdrawled $#{amount}. New balace $#{@credit}."
+  def credit(amount)
+    if @balance >= amount
+      @balance -= amount
+      @transactions_array.unshift(["#{@date} || || #{amount.to_s + ".00"} ||  #{@balance.to_s + ".00"}"])
+      "You withdrawled $#{amount}. New balace $#{@balance}."
     else
       'You have insufficient funds.'
     end

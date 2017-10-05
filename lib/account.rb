@@ -8,23 +8,24 @@ class Account
     @transactions = transactions
   end
 
-  def deposit(value)
-    @transactions.deposit(value)
+  def debit(value)
+    @transactions.debit(value)
   end
 
-  def withdrawl(value)
-    @transactions.withdrawl(value)
+  def credit(value) #debit
+    @transactions.credit(value)
   end
 
   def print_statement
-    print "date || credit || debit || topup \n"
+    print "date || credit || debit || balance \n"
+
     @transactions.transactions_array.each do |row|
       puts row
     end
   end
 end
 
-ac = Account.new('Sam')
-ac.deposit(100)
-ac.withdrawl(50)
-ac.print_statement
+# ac = Account.new('Sam')
+# ac.debit(100)
+# ac.credit(50) #debit
+# ac.print_statement
