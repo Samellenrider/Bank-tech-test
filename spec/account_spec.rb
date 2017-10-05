@@ -16,6 +16,6 @@ describe Account do
     bankaccount = Account.new('Sam')
     bankaccount.debit(50)
     bankaccount.credit(20)
-    expect(bankaccount.print_statement).to eq([['05/10/2017 || || 20.0 ||  30.0'], ['05/10/2017 || 50.0 || ||  50.0']])
+    expect(bankaccount.print_statement).to eq([['05/10/2017 || || 20.0 || 30.0'], ['05/10/2017 || 50.0 || || 50.0']])
   end
 end

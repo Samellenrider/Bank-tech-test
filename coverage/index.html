@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-10-05T17:22:53+01:00">2017-10-05T17:22:53+01:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-10-05T17:40:41+01:00">2017-10-05T17:40:41+01:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,15 +25,15 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.84
+         1.78
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>3</b> files in total.
-    <b>44</b> relevant lines. 
-    <span class="green"><b>44</b> lines covered</span> and
+    <b>43</b> relevant lines. 
+    <span class="green"><b>43</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -53,7 +53,7 @@
       <tr>
         <td class="strong"><a href="#f7899cfe85216fda51217c88febb378db8fba798" class="src_link" title="lib/account.rb">lib/account.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>35</td>
+        <td>30</td>
         <td>17</td>
         <td>17</td>
         <td>0</td>
@@ -63,17 +63,17 @@
       <tr>
         <td class="strong"><a href="#856161db18ab12ac4eaf4871f96ca5bc678fc989" class="src_link" title="lib/transaction.rb">lib/transaction.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>23</td>
-        <td>15</td>
-        <td>15</td>
+        <td>22</td>
+        <td>14</td>
+        <td>14</td>
         <td>0</td>
-        <td>3.0</td>
+        <td>2.9</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#0a9826ebbaffbd18b78512ab4f057511586255da" class="src_link" title="spec/transaction_spec.rb">spec/transaction_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>16</td>
+        <td>17</td>
         <td>12</td>
         <td>12</td>
         <td>0</td>
@@ -290,36 +290,6 @@
           <code class="ruby">end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="31">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="32">
-          
-          
-          <code class="ruby"># ac = Account.new(&#39;Sam&#39;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="33">
-          
-          
-          <code class="ruby"># ac.debit(100)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="34">
-          
-          
-          <code class="ruby"># ac.credit(50) #debit</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="35">
-          
-          
-          <code class="ruby"># ac.print_statement</code>
-        </li>
-      
     </ol>
   </pre>
 </div>
@@ -330,8 +300,8 @@
     <h3>lib/transaction.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>15</b> relevant lines. 
-      <span class="green"><b>15</b> lines covered</span> and
+      <b>14</b> relevant lines. 
+      <span class="green"><b>14</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -390,88 +360,82 @@
         <li class="covered" data-hits="5" data-linenumber="9">
           <span class="hits">5</span>
           
-          <code class="ruby">    t = Time.now</code>
+          <code class="ruby">    @date = Time.now.strftime(&#39;%d/%m/%Y&#39;)</code>
         </li>
       
         <li class="covered" data-hits="5" data-linenumber="10">
           <span class="hits">5</span>
           
-          <code class="ruby">    @date = t.strftime(&#39;%d/%m/%Y&#39;)</code>
+          <code class="ruby">    @transactions_array = []</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="11">
-          <span class="hits">5</span>
+        <li class="never" data-hits="" data-linenumber="11">
           
-          <code class="ruby">    @transactions_array = []</code>
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="13">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="14">
+        <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
           <code class="ruby">  def debit(amount)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="15">
+        <li class="covered" data-hits="3" data-linenumber="14">
           <span class="hits">3</span>
           
           <code class="ruby">    @balance += amount</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="16">
+        <li class="covered" data-hits="3" data-linenumber="15">
           <span class="hits">3</span>
           
-          <code class="ruby">    @transactions_array &lt;&lt; [&quot;#{@date} || #{amount.to_f} || ||  #{@balance.to_f}&quot;]</code>
+          <code class="ruby">    @transactions_array &lt;&lt; [&quot;#{@date} || #{amount.to_f} || || #{@balance.to_f}&quot;]</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
           
           
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="19">
+        <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
           <code class="ruby">  def credit(amount)</code>
         </li>
       
+        <li class="covered" data-hits="2" data-linenumber="19">
+          <span class="hits">2</span>
+          
+          <code class="ruby">    @balance -= amount</code>
+        </li>
+      
         <li class="covered" data-hits="2" data-linenumber="20">
           <span class="hits">2</span>
           
-          <code class="ruby">      @balance -= amount</code>
+          <code class="ruby">    @transactions_array &lt;&lt; [&quot;#{@date} || || #{amount.to_f} || #{@balance.to_f}&quot;]</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="21">
-          <span class="hits">2</span>
-          
-          <code class="ruby">      @transactions_array &lt;&lt; [&quot;#{@date} || || #{amount.to_f} ||  #{@balance.to_f}&quot;]</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="21">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="23">
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">end</code>
@@ -541,7 +505,7 @@
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(transaction.transactions_array.count).to be(1)</code>
+          <code class="ruby">    expect(transaction.transactions_array[0]).to eq([&quot;#{Time.now.strftime(&#39;%d/%m/%Y&#39;)} || 100.0 || || 100.0&quot;])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
@@ -550,43 +514,49 @@
           <code class="ruby">  end</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="10">
           
-          <code class="ruby">  it &#39;adds a transaction to the array credit&#39; do</code>
+          
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    transaction = Transaction.new</code>
+          <code class="ruby">  it &#39;adds a transaction to the array credit&#39; do</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="12">
           <span class="hits">1</span>
           
-          <code class="ruby">    transaction.debit(100)</code>
+          <code class="ruby">    transaction = Transaction.new</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">    transaction.credit(50)</code>
+          <code class="ruby">    transaction.debit(100)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="14">
           <span class="hits">1</span>
           
-          <code class="ruby">    expect(transaction.transactions_array.count).to be(2)</code>
+          <code class="ruby">    transaction.credit(50)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(transaction.transactions_array[0]).to eq([&quot;#{Time.now.strftime(&#39;%d/%m/%Y&#39;)} || 100.0 || || 100.0&quot;])</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="16">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>

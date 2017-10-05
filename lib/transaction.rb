@@ -12,11 +12,11 @@ class Transaction
 
   def debit(amount)
     @balance += amount
-    @transactions_array << ["#{@date} || #{amount.to_f} || ||  #{@balance.to_f}"]
+    @transactions_array << ["#{@date} || #{amount.to_f} || || #{@balance.to_f}"]
   end
 
   def credit(amount)
     @balance -= amount
-    @transactions_array << ["#{@date} || || #{amount.to_f} ||  #{@balance.to_f}"]
+    @transactions_array << ["#{@date} || || #{amount.to_f} || #{@balance.to_f}"]
   end
 end
